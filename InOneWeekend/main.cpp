@@ -9,7 +9,7 @@
 using namespace std;
 
 Hitable *random_scene() {
-	int n = 50000;
+	int n = 500;
 	Hitable **list = new Hitable*[n + 1];
 	list[0] = new Sphere(Vector3(0, -1000, 0), 1000, new Lambertian(Vector3(0.2, 0.5, 0.3)));
 	int i = 1;
